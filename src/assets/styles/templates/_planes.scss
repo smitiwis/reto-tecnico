@@ -1,0 +1,22 @@
+.plans {
+  &__container {
+    display: grid;
+    grid-gap: 20px;
+  }
+  &__saludo,
+  &__prices,
+  &__results,
+  &__titulo,
+  &__acoordeon {
+    padding-left: 30px;
+  }
+  &__button {
+    padding-left: 0px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    .button__normal {
+      margin-top: 0;
+    }
+  }
+}

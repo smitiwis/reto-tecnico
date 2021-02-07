@@ -1,0 +1,219 @@
+/* ------  Componentes ------ */
+
+@import "./select";
+.form-section {
+  padding-left: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.form {
+  margin-top: 20px;
+  width: 336px;
+  height: auto;
+
+  &__container {
+    display: grid;
+    grid-gap: 22px;
+  }
+  &__group {
+    position: relative;
+    .txt-error {
+      color: $rojo;
+      position: absolute;
+      bottom: -13px;
+      left: 5px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border: solid 1px $gris-azulado;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    cursor: text;
+
+    &--border-left {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-right: 0.1px;
+    }
+    &--border-right {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+
+    .value-input {
+      // position: absolute;
+      // top:20px;
+      // left: 15px;
+      // font-size: 16px;
+      // font-weight: 500;
+      // color: $gris-oscuro;
+    }
+
+    .input {
+      margin-top: 5px;
+      outline: none;
+      border-radius: 5px;
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      height: 40px;
+      position: relative;
+      bottom: 0;
+      padding: 10px 15px 0;
+
+      &--date {
+      }
+      &--text {
+      }
+      &--number {
+      }
+    }
+    .label {
+      position: absolute;
+      color: $gris-azulado;
+      font-weight: 500;
+      z-index: -10;
+
+      &--estatic {
+        font-size: 14px;
+        top: 16px;
+        left: 15px;
+        cursor: text;
+        width: 90%;
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        height: 32px;
+        background-color: white;
+      }
+      &--dynamic {
+        font-size: 11px;
+        letter-spacing: 0.4px;
+        top: 5px;
+        height: 18px;
+        position: absolute;
+        left: 15px;
+      }
+    }
+    .select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: $gris-oscuro;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 0 5px;
+    }
+  }
+  .radios {
+    .text {
+      &__subTitle {
+        display: inline-block;
+        margin-bottom: 15px;
+        color: $gris-oscuro;
+        font-weight: 500;
+      }
+    }
+  }
+  &__agreement {
+    display: flex;
+    .agreement {
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      &__checkbox,
+      &__radio {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+      &__checkbox {
+        &:checked + .agreement__label::before {
+          content: "";
+          background: url("../../images/gl_correct-1.png");
+          background: url("../../images/gl_correct.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:checked + .agreement__label {
+          background: $verde;
+          border: solid 1px $verde;
+        }
+      }
+      &__radio {
+        &:checked + .agreement__label::before {
+          content: "";
+          background: url("../../images/radio.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:checked + .agreement__label {
+          background: $verde;
+          border: solid 1px $verde;
+        }
+        &:checked .agreement + .text__agreement {
+          font-weight: bold;
+        }
+      }
+
+      &__checkbox + .agreement__label,
+      &__radio + .agreement__label {
+        transition: all 0.4s;
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: solid 1px $gris-azulado;
+        border-radius: 4px;
+
+        &::before {
+          width: 18px;
+          height: 18px;
+          border-radius: 4px;
+          vertical-align: top;
+          display: inline-block;
+        }
+        &::selection {
+          color: inherit;
+          background-color: transparent;
+        }
+      }
+
+      &__radio + .agreement__label {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+input {
+  background: transparent;
+  height: 50px;
+  border: none;
+  width: 100%;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+  input {
+    padding: 12px 15px 0px;
+  }
+}

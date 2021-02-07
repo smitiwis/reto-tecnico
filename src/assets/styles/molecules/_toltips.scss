@@ -1,0 +1,15 @@
+.toltip {
+    &--verde {
+      background-color: $verde;
+      border-radius: 15px;
+      padding: 3px 8px;
+      color: $blanco;
+      font-size: 8px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    &--rojo {
+    }
+    &--azul {
+    }
+  }

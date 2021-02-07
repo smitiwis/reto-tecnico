@@ -1,0 +1,15 @@
+.icon {
+    margin-right: 10px;
+    &-calendario {
+      color: $azul;
+      cursor: pointer;
+    }
+    &-corazon {
+      color: $azul;
+    }
+  }
+  .tachado {
+    .icon-corazon {
+      color: $gris-tachado;
+    }
+  }

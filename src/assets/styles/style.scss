@@ -1,0 +1,15 @@
+@import "./atoms/variables";
+@import "./atoms/lib";
+@import "./templates/planes";
+@import "./organisms/miga";
+@import "./organisms/select";
+@import "./templates/home";
+@import "./templates/gracias";
+@import "./templates/welcome";
+@import "./componentes";
+
+* {
+  font-family: $fuente-letra;
+}
+
+

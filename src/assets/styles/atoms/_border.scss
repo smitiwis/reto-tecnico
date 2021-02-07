@@ -1,0 +1,8 @@
+.border {
+    display: inline-block;
+  
+    &--gris {
+      border-radius: 8px;
+      border: solid 2px $gris-claroBajo;
+    }
+  }

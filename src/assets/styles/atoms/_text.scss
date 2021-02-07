@@ -1,0 +1,107 @@
+.text {
+    &__title {
+      font-size: 30px;
+      font-weight: 100;
+      &--general {
+        font-size: 50px;
+        color: $blanco;
+      }
+      &--gris {
+        color: $gris-claro;
+      }
+      &--azul {
+        color: $azul;
+        font-weight: bold;
+      }
+      &--blanco {
+        color: $blanco;
+      }
+      &--negrita {
+        font-weight: bold;
+      }
+    }
+    &__subTitle {
+      font-size: 18px;
+      font-weight: 100;
+      line-height: 25px;
+      &--blanco {
+        color: white;
+      }
+      &--gris-claro {
+        color: $gris-claro;
+      }
+      &--gris {
+        color: $gris-claro;
+      }
+      &--azul {
+        color: $azul;
+        font-weight: bold;
+      }
+    }
+    &__description {
+      &--blanco {
+        color: $blanco;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        opacity: 0.9;
+        letter-spacing: 0.7px;
+      }
+      &--negro {
+        font-weight: bold;
+        color: $gris-azulado;
+      }
+      &--gris {
+        color: $gris;
+      }
+      &--gris-tachado {
+        color: $gris-tachado;
+        text-decoration: line-through;
+        font-weight: 500;
+      }
+      &--list {
+        color: $gris-oscuro;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &--list-desc {
+        color: $gris-azulado;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  
+    &__agreement {
+      font-size: 12px;
+      font-weight: 100;
+      line-height: 18px;
+      color: $gris-claro;
+  
+      &--link {
+        color: $gris-azulado;
+      }
+    }
+  
+    &__price {
+      color: $gris-oscuro;
+      font-weight: bold;
+      &--small {
+        font-size: 9px;
+        vertical-align: text-top;
+        margin-top: 5px;
+        display: inline-block;
+      }
+      &--medium {
+        font-size: 12px;
+      }
+      &--large {
+        display: inline-block;
+        font-size: 23px;
+        margin: 2px 0 0px;
+        vertical-align: text-bottom;
+      }
+      &--results {
+      }
+    }
+  }
+  

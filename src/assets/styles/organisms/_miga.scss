@@ -1,0 +1,26 @@
+.miga {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  &__link {
+    display: flex;
+    text-decoration: none;
+  }
+  &__icon {
+    font-size: 25px;
+    margin-top: 3px;
+    color: $azul;
+  }
+  &__first {
+    color: $azul;
+    display: flex;
+    align-items: center;
+    &-texto {
+      margin-left: 10px;
+      margin-right: 4px;
+    }
+  }
+  &__second {
+  }
+}
